@@ -1,12 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { TECHNOLOGIES } from '../../lib/constants';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import '../../assets/css/swiper.css';
 
 const Technologies = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="technologies" className="py-20 px-4 bg-background">
+    <section id="technologies" className="py-20 px-4 bg-background overflow-hidden">
+      {/* Section Title */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,30 +20,35 @@ const Technologies = () => {
       />
 
       <div className="container mx-auto max-w-4xl">
-        {Object.entries(TECHNOLOGIES).map(([category, items], categoryIndex) => (
+        {Object.entries(TECHNOLOGIES).map(([category, items]) => (
           <div key={category} className="mb-12 last:mb-0">
+            {/* Category Title */}
             <h3 className="text-xl font-bold mb-6 text-center">
               {t(`technologies.categories.${category}`)}
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {items.map(({ name, icon: Icon }, index) => (
-                <motion.div
-                  key={name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (categoryIndex * 0.2) + (index * 0.1) }}
-                  className="flex flex-col items-center group"
-                >
-                  <Icon 
-                    className="h-12 w-12 text-muted-foreground transition-all duration-300 group-hover:text-primary group-hover:scale-110" 
-                  />
-                  <span className="mt-2 text-sm transition-colors duration-300 group-hover:text-primary">
-                    {name}
-                  </span>
-                </motion.div>
+
+            {/* Smooth Scrolling Carousel */}
+            <Swiper
+              modules={[Autoplay]}
+              slidesPerView={4} // Always show 4 icons
+              spaceBetween={20} // Proper spacing
+              loop={true} // Enable looping
+              autoplay={{
+                delay: 0, // No delay
+                disableOnInteraction: false, // Keeps running
+              }}
+              speed={3000} // Continuous speed
+              allowTouchMove={false} // Prevent dragging
+            >
+              {items.map(({ name, icon: Icon }, idx) => (
+                <SwiperSlide key={idx}>
+                  <div className="flex flex-col items-center">
+                    <Icon className="h-12 w-12 text-muted-foreground" />
+                    <span className="mt-2 text-sm">{name}</span>
+                  </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
         ))}
       </div>

@@ -9,4 +9,7 @@ export default defineConfig({
   server: {
     open: true, // Automatically open the browser on `npm run dev`
   },
+  optimizeDeps: {
+    include: ['swiper'],
+  },
 });

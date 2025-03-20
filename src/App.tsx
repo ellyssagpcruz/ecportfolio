@@ -6,11 +6,14 @@ import { Toaster } from "./components/ui/toaster";
 import Home from "./pages/Home";
 import NotFound from "./pages/not-found";
 import './lib/i18n';
+import { useTranslation } from "react-i18next";
 
 function Router() {
+  const { i18n, t } = useTranslation();
   useEffect(() => {
     document.documentElement.classList.add('dark');
-  }, []);
+    document.title = t("title");
+  }, [i18n.language, t]);
 
   return (
     <Switch>

@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
+      title: "Elle's Portfolio",
       nav: {
         interests: 'Interests',
         experience: 'Experience',
@@ -15,7 +16,7 @@ const resources = {
         greeting: 'Hi, I am',
         name: 'Ellyssa Cruz',
         role: 'Applications Developer',
-        description: 'A tech enthusiast passionate about creating digital solutions;'
+        description: 'Tech enthusiast passionate in creating digital solutions;'
       },
       sections: {
         interests: 'I am <span class="text-primary">interested</span> in',
@@ -69,6 +70,7 @@ const resources = {
   },
   jp: {
     translation: {
+      title: "エルのポートフォリオ",
       nav: {
         interests: '興味',
         experience: '経験',
@@ -80,7 +82,7 @@ const resources = {
         greeting: 'こんにちは、',
         name: 'エルです～',
         role: 'アプリ開発者',
-        description: 'デジタルソリューションの作成に情熱を傾ける技術愛好家'
+        description: 'デジタルソリューションの作成に情熱を注ぐ技術愛好家；'
       },
       sections: {
         interests: '私は<span class="text-primary">興味</span>があります',
@@ -128,7 +130,7 @@ const resources = {
         }
       },
       contact: {
-        copyright: '© 2025年 クルーズ エライサ・グレース。 不許複製・禁無断転載'
+        copyright: '© 2025年 クルーズ エライサ・グレース。 不許複製・禁無断転載。'
       }
     }
   }
