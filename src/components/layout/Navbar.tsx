@@ -20,6 +20,13 @@ const Navbar = () => {
     { href: '#contact', label: t('nav.contact') }
   ];
 
+  const scrollToTop = () => {
+    const container = document.querySelector('.scrollbar-thin');
+    if (container) {
+      container.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -62,7 +69,7 @@ const Navbar = () => {
             </SheetContent>
           </Sheet>
 
-          <a href="#" className="w-8 h-8 mx-auto">
+          <a onClick={scrollToTop} className="w-8 h-8 mx-auto">
             <svg viewBox="0 0 100 100" className="fill-primary">
               <polygon points="50,0 100,86.6 0,86.6" />
             </svg>
@@ -73,7 +80,7 @@ const Navbar = () => {
 
         {/* Desktop Layout */}
         <div className="hidden lg:flex items-center gap-8">
-          <a href="#" className="w-8 h-8">
+          <a onClick={scrollToTop} className="w-8 h-8">
             <svg viewBox="0 0 100 100" className="fill-primary">
               <polygon points="50,0 100,86.6 0,86.6" />
             </svg>
