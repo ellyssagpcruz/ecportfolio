@@ -64,6 +64,8 @@ const resources = {
         }
       },
       contact: {
+        oldPortfolio: "Check out my old portfolio:",
+        here: "Oh no.",
         copyright: '© 2025 Ellyssa Cruz. All rights reserved.'
       }
     }
@@ -130,6 +132,8 @@ const resources = {
         }
       },
       contact: {
+        oldPortfolio: "私の古いポートフォリオをご覧ください：",
+        here: "笑笑",
         copyright: '© 2025年 クルーズ エライサ・グレース。 不許複製・禁無断転載。'
       }
     }

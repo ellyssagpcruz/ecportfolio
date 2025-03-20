@@ -49,6 +49,24 @@ const Contact = () => {
           })}
         </motion.div>
 
+        {/* Add this new section for the portfolio link */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center text-muted-foreground mt-8"
+        >
+          {t('contact.oldPortfolio')}{' '}
+          <a
+            href="https://ellyssagpcruz.github.io/webportfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline"
+          >
+            {t('contact.here')}
+          </a>
+        </motion.p>
+
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

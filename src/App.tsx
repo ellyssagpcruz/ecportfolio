@@ -25,10 +25,12 @@ function Router() {
 
 function App() {
   return (
+    <div className="scrollbar-thin overflow-y-scroll h-screen">
     <QueryClientProvider client={queryClient}>
       <Router />
       <Toaster />
     </QueryClientProvider>
+    </div>
   );
 }
 

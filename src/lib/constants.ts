@@ -1,9 +1,11 @@
-import { SiJavascript, SiTypescript, SiPython, SiPhp, SiDotnet, SiHuggingface, SiNodedotjs, SiReact, SiVuedotjs, SiVite, SiExpress, SiSpringboot, SiGit, SiPostman, SiVercel, SiJupyter, SiBootstrap, SiTailwindcss, SiFigma, SiAdobexd, SiAdobephotoshop, SiCanva } from 'react-icons/si';
-import { FaJava, FaHtml5, FaCss3Alt, FaGitlab, FaWix, FaProjectDiagram } from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiPython, SiPhp, SiDotnet, SiHuggingface, SiNodedotjs, SiReact, SiVuedotjs, SiVite, SiExpress, SiSpringboot, SiGit, SiPostman, SiVercel, SiRender, SiMongodb, SiSupabase, SiJupyter, SiBootstrap, SiTailwindcss, SiFigma, SiAdobexd, SiAdobephotoshop, SiCanva } from 'react-icons/si';
+import { FaJava, FaHtml5, FaCss3Alt, FaGitlab, FaProjectDiagram } from 'react-icons/fa';
+import { TbBrandCSharp, TbSql, TbBrandNextjs, TbBrandVscode } from 'react-icons/tb';
 import { FaC, FaGolang  } from 'react-icons/fa6';
 import { CgCPlusPlus } from 'react-icons/cg';
 import { GiTortoise } from 'react-icons/gi';
-import { TbBrandCSharp, TbSql, TbBrandNextjs, TbBrandVscode } from 'react-icons/tb';
+import { DiVisualstudio } from 'react-icons/di';
+import { FiShare2 } from 'react-icons/fi';
 
 export const TECHNOLOGIES = {
   languages: [
@@ -35,7 +37,11 @@ export const TECHNOLOGIES = {
     { name: 'Postman', icon: SiPostman },
     { name: 'Vercel', icon: SiVercel },
     { name: 'SVN', icon: GiTortoise },
-    { name: 'VS Code', icon: TbBrandVscode },
+    { name: 'Render', icon: SiRender },
+    { name: 'MongoDB', icon: SiMongodb },
+    { name: 'Supabase', icon: SiSupabase },
+    { name: 'Code', icon: TbBrandVscode },
+    { name: 'Visual Studio', icon: DiVisualstudio },
     { name: 'Jupyter', icon: SiJupyter }
   ],
   design: [
@@ -45,8 +51,9 @@ export const TECHNOLOGIES = {
     { name: 'Adobe XD', icon: SiAdobexd },
     { name: 'Photoshop', icon: SiAdobephotoshop },
     { name: 'Canva', icon: SiCanva },
-    { name: 'Wix', icon: FaWix },
-    { name: 'Visio', icon: FaProjectDiagram }
+    { name: 'Visio', icon: FaProjectDiagram },
+    { name: 'LucidChart', icon: FiShare2 },
+
   ]
 };
 
