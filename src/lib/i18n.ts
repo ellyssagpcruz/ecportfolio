@@ -15,44 +15,44 @@ const resources = {
         greeting: 'Hi, I am',
         name: 'Ellyssa Cruz',
         role: 'Applications Developer',
-        description: 'Building innovative solutions with modern technologies'
+        description: 'A tech enthusiast passionate about creating digital solutions;'
       },
       sections: {
         interests: 'I am <span class="text-primary">interested</span> in',
-        experience: 'My career <span class="text-primary">experience</span> so far',
-        technologies: 'The tools and <span class="text-primary">technologies</span> I use',
+        experience: 'My career <span class="text-primary">experience</span>',
+        technologies: 'Tools and <span class="text-primary">technologies</span> I use',
         contact: 'Get in touch'
       },
       interests: {
         uiux: {
           title: 'UI/UX Design',
-          description: 'Creating intuitive and beautiful user experiences'
+          description: 'I\'ve loved art since childhood, and designing digital products combines creativity and functionality—a crucial part of shaping software users will love.'
         },
         applications: {
           title: 'Applications Development',
-          description: 'Web, Desktop, Mobile, and Game Development'
+          description: 'Coding has been my passion since high school, starting with web projects and now expanding into desktop, mobile, and even game development—it\'s my playground for innovation.'
         },
         ai: {
           title: 'ML/AI Development',
-          description: 'Implementing intelligent solutions'
+          description: 'From skepticism to fascination, my hands-on experience with NLP and RAG opened my eyes to AI’s potential to revolutionize the world.'
         },
         cloud: {
-          title: 'Infrastructure/Cloud',
-          description: 'Building scalable cloud architectures'
+          title: 'Infra/Cloud Management',
+          description: 'Though new to this field, diving into Git CI/CD and cloud projects as part of my upskilling journey has sparked my curiosity and drive to master it.'
         }
       },
       experience: {
         current: {
-          company: 'Tech Corp',
-          role: 'Senior Developer',
-          period: '2022-Present',
-          description: 'Leading development teams and implementing innovative solutions using modern technologies.'
+          company: 'Advanced World Solutions, Inc.',
+          role: 'Research & Development Engineer',
+          period: '2023-Present',
+          description: 'Maintain ERP applications, fix bugs, document processes, test, collaborate, adopt technologies, and improve business workflows effectively.'
         },
         previous: {
-          company: 'Startup Inc',
-          role: 'Full Stack Developer',
-          period: '2020-2022',
-          description: 'Built and maintained multiple web applications, focusing on scalable architecture and user experience.'
+          company: 'AORTA Australia',
+          role: 'Freelance Digital Marketer - Web Specialist',
+          period: '2022-2023',
+          description: 'Revamp website and migrate to Wix, enhance processes, customize interactions, collaborate, and manage online transactions.'
         }
       },
       technologies: {
@@ -70,54 +70,54 @@ const resources = {
   jp: {
     translation: {
       nav: {
-        interests: '興味分野',
-        experience: '経歴',
+        interests: '興味',
+        experience: '経験',
         technologies: '技術',
         contact: '連絡先',
         language: 'English'
       },
       hero: {
         greeting: 'こんにちは、',
-        name: 'エリッサ・クルーズ',
-        role: 'アプリケーション開発者',
-        description: '最新技術を活用した革新的なソリューションの開発'
+        name: 'エルです～',
+        role: 'アプリ開発者',
+        description: 'デジタルソリューションの作成に情熱を傾ける技術愛好家'
       },
       sections: {
         interests: '私は<span class="text-primary">興味</span>があります',
-        experience: '私の<span class="text-primary">キャリア</span>経験',
-        technologies: '私が使用する<span class="text-primary">技術</span>とツール',
+        experience: '私のキャリア<span class="text-primary">経験</span>',
+        technologies: '私が使用する<span class="text-primary">テクノロジー</span>とツール',
         contact: 'お問い合わせ'
       },
       interests: {
         uiux: {
-          title: 'UI/UXデザイン',
-          description: '直感的で美しいユーザー体験の創造'
+          title: 'UI・UXデザイン',
+          description: '子供の頃から芸術が好きで、デジタル製品のデザインは創造性と機能性を兼ね備えており、ユーザーが気に入るようなソフトウェアを形作る上で非常に重要な要素です。'
         },
         applications: {
-          title: 'アプリケーション開発',
-          description: 'Web、デスクトップ、モバイル、ゲーム開発'
+          title: 'アプリ開発',
+          description: '高校時代からコーディングは私の情熱であり、Webプロジェクトから始まり、今ではデスクトップ、モバイル、さらにはゲーム開発にまで広がっています。コーディングは私にとってイノベーションの遊び場です。'
         },
         ai: {
-          title: 'ML/AI開発',
-          description: 'インテリジェントなソリューションの実装'
+          title: 'ML・AI開発',
+          description: '懐疑心から魅了へ、NLPとRAGの実践的な経験により、AIが世界に革命を起こす可能性に目が開かれました。'
         },
         cloud: {
-          title: 'インフラ/クラウド',
-          description: 'スケーラブルなクラウドアーキテクチャの構築'
+          title: 'インフラ・クラウド管理',
+          description: 'この分野は初めてですが、スキルアップの一環として Git CI/CD とクラウド プロジェクトに取り組んだことで、この分野を習得したいという好奇心と意欲が湧いてきました。'
         }
       },
       experience: {
         current: {
-          company: 'テックコープ',
-          role: 'シニア開発者',
-          period: '2022-現在',
-          description: '開発チームをリードし、最新技術を活用した革新的なソリューションを実装。'
+          company: 'アドバンスドワールドソリューションズ',
+          role: '研究開発エンジニア',
+          period: '2023年～現在',
+          description: 'ERPアプリを保守し、バグを修正し、プロセスを文書化し、テストし、共同作業を行い、テクノロジを採用し、ビジネス ワークフローを効果的に改善します。'
         },
         previous: {
-          company: 'スタートアップ',
-          role: 'フルスタック開発者',
-          period: '2020-2022',
-          description: '複数のWebアプリケーションの開発と保守を担当し、スケーラブルなアーキテクチャとユーザー体験に注力。'
+          company: 'AORTA オーストラリア',
+          role: 'フリーランスwebマーケター',
+          period: '2022年～2023年',
+          description: 'Webサイトを刷新して Wixに移行し、プロセスを強化し、インタラクションをカスタマイズし、共同作業を行い、オンライントランザクションを管理します。'
         }
       },
       technologies: {
@@ -128,7 +128,7 @@ const resources = {
         }
       },
       contact: {
-        copyright: '© 2025 エリッサ・クルーズ. 不許複製・禁無断転載'
+        copyright: '© 2025年 クルーズ エライサ・グレース。 不許複製・禁無断転載'
       }
     }
   }

@@ -1,13 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { SOCIAL_LINKS } from '../../lib/constants';
-import { FaLinkedin, FaGithub, FaYoutube, FaDribbble, FaFileAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaDiscord, FaFileAlt } from 'react-icons/fa';
 
 const iconMap = {
   LinkedIn: FaLinkedin,
   GitHub: FaGithub,
-  YouTube: FaYoutube,
-  Dribbble: FaDribbble,
+  Discord: FaDiscord,
   Resume: FaFileAlt
 };
 
