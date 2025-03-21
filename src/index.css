@@ -60,24 +60,4 @@
   html {
     scroll-behavior: smooth;
   }
-
-  /* Custom scrollbar */
-  .scrollbar-thin {
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #DC3545 #212529; /* Thumb and track colors for Firefox */
-  }
-
-  .scrollbar-thin::-webkit-scrollbar {
-      width: 8px; /* Scrollbar width */
-  }
-
-  .scrollbar-thin::-webkit-scrollbar-track {
-      background: linear-gradient(#212529, #5a1f23); /* Gradient track */
-  }
-
-  .scrollbar-thin::-webkit-scrollbar-thumb {
-      background-color: #DC3545; /* Thumb color (red accent) */
-      border-radius: 10px; /* Rounded edges */
-      border: 2px solid transparent; /* Creates space around thumb */
-  }
 }

@@ -26,7 +26,7 @@ function Router() {
 function App() {
 
   return (
-    <div className="scrollbar-thin overflow-y-scroll h-screen">
+    <div className="scrollbar scrollbar-thin scrollbar-track-gray-800 scrollbar-thumb-red-500 h-screen overflow-y-auto">
       <QueryClientProvider client={queryClient}>
         <Router />
         <Toaster />
