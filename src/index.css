@@ -3,6 +3,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom scrollbar styles */
+.custom-scrollbar {
+  --scrollbar-width: 3px;
+  --thumb-top: 64px;
+  --thumb-height: 15px;
+  --scrollbar-height: calc(100vh - 64px);
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  position: relative;
+}
+
+/* Hide default scrollbar for WebKit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar container */
+.custom-scrollbar::after {
+  content: '';
+  position: fixed;
+  top: 64px; /* Start after navbar height */
+  right: 0;
+  width: 3px;
+  height: var(--scrollbar-height);
+  background-color: transparent;
+  z-index: 49;
+  pointer-events: none;
+}
+
+/* Custom scrollbar thumb */
+.custom-scrollbar::before {
+  content: '';
+  position: fixed;
+  top: var(--thumb-top); /* Dynamically set by JS */
+  right: 0;
+  width: 3px;
+  height: var(--thumb-height); /* Dynamically set by JS */
+  background-color: hsl(var(--primary));
+  border-radius: 3px;
+  z-index: 50;
+  opacity: 0; /* Hide initially */
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+/* Show thumb when hovering or scrolling */
+.custom-scrollbar.is-hovered::before,
+.custom-scrollbar.is-scrolling::before {
+  opacity: 1;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

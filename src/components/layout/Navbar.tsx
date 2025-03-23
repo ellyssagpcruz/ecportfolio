@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   const scrollToTop = () => {
-    const container = document.querySelector('.scrollbar-thin');
+    const container = document.querySelector('.custom-scrollbar');
     if (container) {
       container.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -31,7 +31,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed w-full bg-background shadow-lg z-50 border-b"
+      className="fixed top-0 left-0 right-0 bg-background shadow-lg z-50 border-b"
     >
       <div className="container mx-auto px-4 h-16 flex items-center">
         {/* Mobile Layout */}

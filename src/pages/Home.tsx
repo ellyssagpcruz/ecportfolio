@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="pt-16">
         <Hero />
         <Interests />
         <Experience />

@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import Home from "./pages/Home";
 import NotFound from "./pages/not-found";
 import './lib/i18n';
+import { initCustomScrollbar } from './lib/scrollbar';
 
 function Router() {
   const { i18n, t } = useTranslation();
@@ -24,9 +25,14 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => {
+    // Initialize custom scrollbar
+    const cleanup = initCustomScrollbar();
+    return cleanup;
+  }, []);
 
   return (
-    <div className="scrollbar scrollbar-thin scrollbar-track-gray-800 scrollbar-thumb-red-500 h-screen overflow-y-auto">
+    <div className="custom-scrollbar h-screen overflow-y-auto">
       <QueryClientProvider client={queryClient}>
         <Router />
         <Toaster />
