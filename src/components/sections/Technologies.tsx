@@ -1,9 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { TECHNOLOGIES } from '../../lib/constants';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import '../../assets/css/swiper.css';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
 
 const Technologies = () => {
   const { t } = useTranslation();
@@ -27,28 +30,31 @@ const Technologies = () => {
               {t(`technologies.categories.${category}`)}
             </h3>
 
-            {/* Smooth Scrolling Carousel */}
-            <Swiper
-              modules={[Autoplay]}
-              slidesPerView={4} // Always show 4 icons
-              spaceBetween={20} // Proper spacing
-              loop={true} // Enable looping
-              autoplay={{
-                delay: 0, // No delay
-                disableOnInteraction: false, // Keeps running
-              }}
-              speed={3000} // Continuous speed
-              allowTouchMove={false} // Prevent dragging
-            >
+            {/* Grid of Icons with Tooltips */}
+            <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 max-w-3xl mx-auto">
               {items.map(({ name, icon: Icon }, idx) => (
-                <SwiperSlide key={idx}>
-                  <div className="flex flex-col items-center">
-                    <Icon className="h-12 w-12 text-muted-foreground" />
-                    <span className="mt-2 text-sm">{name}</span>
-                  </div>
-                </SwiperSlide>
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.05 }}
+                >
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center justify-center p-1.5 rounded-lg hover:bg-secondary/50 transition-colors">
+                          <Icon className="h-7 w-7 text-muted-foreground" />
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{name}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </motion.div>
               ))}
-            </Swiper>
+            </div>
           </div>
         ))}
       </div>

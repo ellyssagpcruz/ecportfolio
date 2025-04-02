@@ -1,11 +1,12 @@
 import { SiJavascript, SiTypescript, SiPython, SiPhp, SiDotnet, SiHuggingface, SiNodedotjs, SiReact, SiVuedotjs, SiVite, SiExpress, SiSpringboot, SiGit, SiPostman, SiVercel, SiRender, SiMongodb, SiSupabase, SiJupyter, SiBootstrap, SiTailwindcss, SiFigma, SiAdobexd, SiAdobephotoshop, SiCanva } from 'react-icons/si';
 import { FaJava, FaHtml5, FaCss3Alt, FaGitlab, FaProjectDiagram } from 'react-icons/fa';
 import { TbBrandCSharp, TbSql, TbBrandNextjs, TbBrandVscode } from 'react-icons/tb';
-import { FaC, FaGolang  } from 'react-icons/fa6';
+import { FaC } from 'react-icons/fa6';
 import { CgCPlusPlus } from 'react-icons/cg';
 import { GiTortoise } from 'react-icons/gi';
 import { DiVisualstudio } from 'react-icons/di';
 import { FiShare2 } from 'react-icons/fi';
+import { RiFileExcel2Fill } from 'react-icons/ri';
 
 export const TECHNOLOGIES = {
   languages: [
@@ -17,10 +18,10 @@ export const TECHNOLOGIES = {
     { name: 'Python', icon: SiPython },
     { name: 'Java', icon: FaJava },
     { name: 'PHP', icon: SiPhp },
-    { name: 'Go', icon: FaGolang },
     { name: 'HTML', icon: FaHtml5 },
     { name: 'CSS', icon: FaCss3Alt },
-    { name: 'SQL', icon: TbSql }
+    { name: 'SQL', icon: TbSql },
+    { name: 'VBA', icon: RiFileExcel2Fill }
   ],
   development: [
     { name: '.NET', icon: SiDotnet },
