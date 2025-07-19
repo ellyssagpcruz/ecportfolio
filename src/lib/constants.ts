@@ -1,5 +1,5 @@
 import { SiJavascript, SiTypescript, SiPython, SiPhp, SiDotnet, SiHuggingface, SiNodedotjs, SiReact, SiVuedotjs, SiVite, SiExpress, SiSpringboot, SiGit, SiPostman, SiVercel, SiRender, SiMongodb, SiSupabase, SiJupyter, SiBootstrap, SiTailwindcss, SiFigma, SiAdobexd, SiAdobephotoshop, SiCanva } from 'react-icons/si';
-import { FaJava, FaHtml5, FaCss3Alt, FaGitlab, FaProjectDiagram } from 'react-icons/fa';
+import { FaJava, FaHtml5, FaCss3Alt, FaAndroid, FaGitlab, FaProjectDiagram } from 'react-icons/fa';
 import { TbBrandCSharp, TbSql, TbBrandNextjs, TbBrandVscode } from 'react-icons/tb';
 import { FaC } from 'react-icons/fa6';
 import { CgCPlusPlus } from 'react-icons/cg';
@@ -25,16 +25,15 @@ export const TECHNOLOGIES = {
   ],
   development: [
     { name: '.NET', icon: SiDotnet },
-    { name: 'HuggingFace', icon: SiHuggingface },
-    { name: 'Nodejs', icon: SiNodedotjs },
     { name: 'React', icon: SiReact },
-    { name: 'Vue', icon: SiVuedotjs },
     { name: 'Vite', icon: SiVite },
+    { name: 'Nodejs', icon: SiNodedotjs },
     { name: 'Expressjs', icon: SiExpress },
     { name: 'Nextjs', icon: TbBrandNextjs },
     { name: 'Spring Boot', icon: SiSpringboot },
     { name: 'Git', icon: SiGit },
     { name: 'GitLab', icon: FaGitlab },
+    { name: 'HuggingFace', icon: SiHuggingface },
     { name: 'Postman', icon: SiPostman },
     { name: 'Vercel', icon: SiVercel },
     { name: 'SVN', icon: GiTortoise },
@@ -43,7 +42,8 @@ export const TECHNOLOGIES = {
     { name: 'Supabase', icon: SiSupabase },
     { name: 'Code', icon: TbBrandVscode },
     { name: 'Visual Studio', icon: DiVisualstudio },
-    { name: 'Jupyter', icon: SiJupyter }
+    { name: 'Jupyter', icon: SiJupyter },
+    { name: 'Android Studio', icon: FaAndroid }
   ],
   design: [
     { name: 'Bootstrap', icon: SiBootstrap },
